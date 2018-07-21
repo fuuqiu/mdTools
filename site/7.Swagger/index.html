@@ -89,6 +89,16 @@
             
     <li class="toctree-l2"><a href="#swagger-ui">Swagger UI使用</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">简介</a></li>
+        
+            <li><a class="toctree-l3" href="#_2">相关资源链接</a></li>
+        
+            <li><a class="toctree-l3" href="#_3">汉化文件</a></li>
+        
+        </ul>
+    
 
     </ul>
 	    </li>
@@ -129,12 +139,74 @@
             <div class="section">
               
                 <h4 id="swagger-ui">Swagger UI使用</h4>
-<pre><code>https://zhuanlan.zhihu.com/p/21353795
-http://blog.csdn.net/yy8432113/article/details/53008143
-http://swagger.io/specification/  //具体的数据格式文档
-https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-5-advanced-input-and-output-modeling/
-http://swagger.io/docs/specification/describing-parameters/
+<h5 id="_1">简介</h5>
+<pre><code>没有任何实现逻辑的情况下可视化和与API资源交互。它是从您的OpenAPI（以前称为Swagger）规范自动生成的，其可视化文档使后端实现和客户端消费变得容易。--来源官方翻译
+</code></pre>
 
+<p><img alt="image-20180721110001644" src="../imgs/image-20180721110001644.png" /></p>
+<ul>
+<li><strong>理解：</strong></li>
+<li>不论是什么工具，需要对其背景和相关资源都要有所涉猎。便于更好的掌握</li>
+<li>Swagger是一个Restful风格接口的文档在线自动生成和测试的框架。语法遵从yaml，语法参<a href="http://www.ruanyifeng.com/blog/2016/07/yaml.html?f=tt">考阮一峰</a></li>
+<li>在编写之前很有必要认真阅读<a href="https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api">Restful规范</a></li>
+</ul>
+<h5 id="_2">相关资源链接</h5>
+<ul>
+<li><a href="https://editor.swagger.io/">在线编辑器</a></li>
+<li><a href="https://swagger.io/docs/specification/describing-parameters/">参数示例</a></li>
+<li><a href="http://openapi-map.apihandyman.io/?version=2.0">语法节点脑图</a></li>
+<li><a href="https://swagger.io/specification/">详细语法文档</a></li>
+</ul>
+<p>更多使用教程后续会持续更新，参考以上语法可快速编写swagger文档</p>
+<h5 id="_3">汉化文件</h5>
+<pre><code>&quot;Warning: Deprecated&quot;: &quot;警告：已过时&quot;,
+&quot;Implementation Notes&quot;: &quot;实现备注&quot;,
+&quot;Response Class&quot;: &quot;响应类&quot;,
+&quot;Status&quot;: &quot;状态&quot;,
+&quot;Parameters&quot;: &quot;参数&quot;,
+&quot;Parameter&quot;: &quot;参数&quot;,
+&quot;Value&quot;: &quot;值&quot;,
+&quot;Description&quot;: &quot;描述&quot;,
+&quot;Parameter Type&quot;: &quot;参数类型&quot;,
+&quot;Data Type&quot;: &quot;数据类型&quot;,
+&quot;Response Messages&quot;: &quot;响应消息&quot;,
+&quot;HTTP Status Code&quot;: &quot;HTTP状态码&quot;,
+&quot;Reason&quot;: &quot;原因&quot;,
+&quot;Response Model&quot;: &quot;响应模型&quot;,
+&quot;Request URL&quot;: &quot;请求URL&quot;,
+&quot;Response Body&quot;: &quot;响应体&quot;,
+&quot;Response Code&quot;: &quot;响应码&quot;,
+&quot;Response Headers&quot;: &quot;响应头&quot;,
+&quot;Hide Response&quot;: &quot;隐藏响应&quot;,
+&quot;Headers&quot;: &quot;头&quot;,
+&quot;Try it out!&quot;: &quot;试一下！&quot;,
+&quot;Show/Hide&quot;: &quot;显示/隐藏&quot;,
+&quot;List Operations&quot;: &quot;显示操作&quot;,
+&quot;Expand Operations&quot;: &quot;展开操作&quot;,
+&quot;Raw&quot;: &quot;原始&quot;,
+&quot;can't parse JSON.  Raw result&quot;: &quot;无法解析JSON. 原始结果&quot;,
+&quot;Model Schema&quot;: &quot;模型架构&quot;,
+&quot;Model&quot;: &quot;模型&quot;,
+&quot;apply&quot;: &quot;应用&quot;,
+&quot;Username&quot;: &quot;用户名&quot;,
+&quot;Password&quot;: &quot;密码&quot;,
+&quot;Terms of service&quot;: &quot;服务条款&quot;,
+&quot;Created by&quot;: &quot;创建者&quot;,
+&quot;See more at&quot;: &quot;查看更多：&quot;,
+&quot;Contact the developer&quot;: &quot;联系开发者&quot;,
+&quot;api version&quot;: &quot;api版本&quot;,
+&quot;Response Content Type&quot;: &quot;响应Content Type&quot;,
+&quot;fetching resource&quot;: &quot;正在获取资源&quot;,
+&quot;fetching resource list&quot;: &quot;正在获取资源列表&quot;,
+&quot;Explore&quot;: &quot;浏览&quot;,
+&quot;Show Swagger Petstore Example Apis&quot;: &quot;显示 Swagger Petstore 示例 Apis&quot;,
+&quot;Can't read from server.  It may not have the appropriate access-control-origin settings.&quot;: &quot;无法从服务器读取。可能没有正确设置access-control-origin。&quot;,
+&quot;Please specify the protocol for&quot;: &quot;请指定协议：&quot;,
+&quot;Can't read swagger JSON from&quot;: &quot;无法读取swagger JSON于&quot;,
+&quot;Finished Loading Resource Information. Rendering Swagger UI&quot;: &quot;已加载资源信息。正在渲染Swagger UI&quot;,
+&quot;Unable to read api&quot;: &quot;无法读取api&quot;,
+&quot;from path&quot;: &quot;从路径&quot;,
+&quot;server returned&quot;: &quot;服务器返回&quot;
 </code></pre>
               
             </div>
