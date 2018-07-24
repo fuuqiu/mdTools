@@ -40,7 +40,7 @@
     
     
       
-        <title>3.PostMan - 程序员常用工具使用教程</title>
+        <title>PostMan接口调试工具 - 程序员常用工具使用教程</title>
       
     
     
@@ -120,7 +120,7 @@
                 程序员常用工具使用教程
               </span>
               <span class="md-header-nav__topic">
-                3.PostMan
+                PostMan接口调试工具
               </span>
             
           
@@ -278,27 +278,78 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        3.PostMan
+        PostMan接口调试工具
       </label>
     
-    <a href="./" title="3.PostMan" class="md-nav__link md-nav__link--active">
-      3.PostMan
+    <a href="./" title="PostMan接口调试工具" class="md-nav__link md-nav__link--active">
+      PostMan接口调试工具
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#postman" title="PostMan接口调试工具使用" class="md-nav__link">
-    PostMan接口调试工具使用
+  <a href="#_1" title="免登陆调试" class="md-nav__link">
+    免登陆调试
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token" title="Token存储到全局变量" class="md-nav__link">
+    Token存储到全局变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token_1" title="使用全局变量中的Token" class="md-nav__link">
+    使用全局变量中的Token
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="快速切换调试环境" class="md-nav__link">
+    快速切换调试环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="手工配置全局变量" class="md-nav__link">
+    手工配置全局变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="配置示例" class="md-nav__link">
+    配置示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -387,14 +438,63 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#postman" title="PostMan接口调试工具使用" class="md-nav__link">
-    PostMan接口调试工具使用
+  <a href="#_1" title="免登陆调试" class="md-nav__link">
+    免登陆调试
   </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token" title="Token存储到全局变量" class="md-nav__link">
+    Token存储到全局变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token_1" title="使用全局变量中的Token" class="md-nav__link">
+    使用全局变量中的Token
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="快速切换调试环境" class="md-nav__link">
+    快速切换调试环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="手工配置全局变量" class="md-nav__link">
+    手工配置全局变量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="配置示例" class="md-nav__link">
+    配置示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -417,9 +517,26 @@
                   <a href="https://github.com/fuuqiu/mdTools/edit/master/docs/3.PostMan.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>3.PostMan</h1>
-                
-                <h4 id="postman">PostMan接口调试工具使用</h4>
+                <h1 id="postman">PostMan接口调试工具</h1>
+<pre><code>最近因为写接口比较多,也是刚换到现在的组合软件记录笔记.会有很多变动,样式和记录风格又做了一小部分的调整
+目前笔记编写只有本人参与,希望后期有更多的小伙伴参与其中
+</code></pre>
+
+<p>接口呈现使用Swagger来编写,因为也是刚开始接触,使用不是很熟练,基本上是在Postman中调试成功,才会在Swagger中编写Open API ,在这里感谢Kevin大神的指导,让我接触到了更广阔的世界中</p>
+<h2 id="_1">免登陆调试</h2>
+<h3 id="token">Token存储到全局变量</h3>
+<p>通常很多请求接口都是私密的,每次请求都需要携带token,而每次登录token都会改变,为了避免每次请求都需要手工携带token,就需要在登陆的时候将token存储在全局变量中</p>
+<p><img alt="image-20180724221433354" src="../assets/image-20180724221433354.png" /></p>
+<p>通过以上方式,可以将token存储到全局变量中.变量名:access_token</p>
+<h3 id="token_1">使用全局变量中的Token</h3>
+<p><img alt="image-20180724221902799" src="../assets/image-20180724221902799.png" /></p>
+<h2 id="_2">快速切换调试环境</h2>
+<p>在开发中我们通常会遇到开发环境,测试环境,正式环境…,如果每一个接口都去修改请求路径也是一件费神的事</p>
+<h3 id="_3">手工配置全局变量</h3>
+<p><img alt="image-20180724222225719" src="../assets/image-20180724222225719.png" /></p>
+<h3 id="_4">配置示例</h3>
+<p><img alt="image-20180724222303034" src="../assets/image-20180724222303034.png" /></p>
+<p>说明:使用变量语法 {{var_name}}</p>
                 
                   
                 
