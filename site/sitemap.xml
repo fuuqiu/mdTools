@@ -2,47 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/1.Charles/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/10.AdminMongo/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/11.GitFork/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/12.ShellTree/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/13.CentOS防火墙/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/14.MacOS/</loc>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/15.Windows2008/</loc>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/2.IDEA/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/3.PostMan/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/4.Sublime/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/5.mkdocs/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/6.AillustratorCC/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/7.Swagger/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>/8.AdobePhotoshop/</loc>
-     <lastmod>2018-07-24</lastmod>
+     <lastmod>2018-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>/9.MongoDB/</loc>
+     <lastmod>2018-08-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

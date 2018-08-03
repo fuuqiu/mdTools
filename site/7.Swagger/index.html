@@ -261,6 +261,78 @@
 
 
   <li class="md-nav__item">
+    <a href="../10.AdminMongo/" title="AdminMongo可视化管理工具" class="md-nav__link">
+      AdminMongo可视化管理工具
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../11.GitFork/" title="Git Fork工作流程" class="md-nav__link">
+      Git Fork工作流程
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../12.ShellTree/" title="新的生活节奏" class="md-nav__link">
+      新的生活节奏
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../13.CentOS防火墙/" title="CentOS系统" class="md-nav__link">
+      CentOS系统
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../14.MacOS/" title="MacOS系统使用" class="md-nav__link">
+      MacOS系统使用
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../15.Windows2008/" title="Windows 2008基本配置" class="md-nav__link">
+      Windows 2008基本配置
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../2.IDEA/" title="2.IDEA" class="md-nav__link">
       2.IDEA
     </a>
@@ -373,6 +445,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#http" title="HTTP状态代码" class="md-nav__link">
+    HTTP状态代码
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#_4" title="汉化文件" class="md-nav__link">
     汉化文件
   </a>
@@ -403,6 +482,18 @@
   <li class="md-nav__item">
     <a href="../8.AdobePhotoshop/" title="8.AdobePhotoshop" class="md-nav__link">
       8.AdobePhotoshop
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../9.MongoDB/" title="9.MongoDB" class="md-nav__link">
+      9.MongoDB
     </a>
   </li>
 
@@ -450,6 +541,13 @@
           <li class="md-nav__item">
   <a href="#_3" title="数据类型" class="md-nav__link">
     数据类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#http" title="HTTP状态代码" class="md-nav__link">
+    HTTP状态代码
   </a>
   
 </li>
@@ -586,6 +684,23 @@
 </tr>
 </tbody>
 </table>
+<h5 id="http">HTTP状态代码</h5>
+<p>HTTP定义了一堆可以从API返回的<a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes">有意义的状态代码</a>。可以利用这些来帮助API消费者相应地路由他们的响应。我已经策划了一份你肯定应该使用的短名单：</p>
+<ul>
+<li>200 OK - 响应成功的GET，PUT，PATCH或DELETE。也可以用于不会导致创建的POST。</li>
+<li>201 Created - 对POST的响应，导致创建。应与指向新资源位置的<a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.30">Location标头</a>结合使用</li>
+<li>204 No Content - 对不会返回正文的成功请求的响应（如DELETE请求）</li>
+<li>304 Not Modified - 在HTTP缓存标头播放时使用</li>
+<li>400错误请求 - 请求格式错误，例如正文无法解析</li>
+<li>401 Unauthorized - 未提供或无效的身份验证详细信息时。如果从浏览器使用API，也可以触发auth弹出窗口</li>
+<li>403 Forbidden - 身份验证成功但经过身份验证的用户无权访问资源</li>
+<li>404 Not Found - 请求不存在的资源时</li>
+<li>405不允许的方法 - 当请求的HTTP方法不允许经过身份验证的用户时</li>
+<li>410 Gone - 表示此端点的资源不再可用。对旧API版本的一揽子响应很有用</li>
+<li>415不支持的媒体类型 - 如果作为请求的一部分提供了错误的内容类型</li>
+<li>422不可处理的实体 - 用于验证错误</li>
+<li>429请求过多 - 请求因速率限制而被拒绝</li>
+</ul>
 <h5 id="_4">汉化文件</h5>
 <pre><code>&quot;Warning: Deprecated&quot;: &quot;警告：已过时&quot;,
 &quot;Implementation Notes&quot;: &quot;实现备注&quot;,
