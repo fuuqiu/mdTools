@@ -40,7 +40,7 @@
     
     
       
-        <title>Charles抓包工具 - 程序员常用工具使用教程</title>
+        <title>PostMan接口调试工具 - 程序员常用工具使用教程</title>
       
     
     
@@ -94,7 +94,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#charles" tabindex="1" class="md-skip">
+      <a href="#postman" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -120,7 +120,7 @@
                 程序员常用工具使用教程
               </span>
               <span class="md-header-nav__topic">
-                Charles抓包工具
+                PostMan接口调试工具
               </span>
             
           
@@ -247,6 +247,30 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../01.Charles/" title="Charles抓包工具" class="md-nav__link">
+      Charles抓包工具
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../02.IDEA/" title="02.IDEA" class="md-nav__link">
+      02.IDEA
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -258,11 +282,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Charles抓包工具
+        PostMan接口调试工具
       </label>
     
-    <a href="./" title="Charles抓包工具" class="md-nav__link md-nav__link--active">
-      Charles抓包工具
+    <a href="./" title="PostMan接口调试工具" class="md-nav__link md-nav__link--active">
+      PostMan接口调试工具
     </a>
     
       
@@ -276,59 +300,24 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="简介" class="md-nav__link">
-    简介
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="下载地址" class="md-nav__link">
-    下载地址
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" title="配置" class="md-nav__link">
-    配置
+  <a href="#_1" title="免登陆调试" class="md-nav__link">
+    免登陆调试
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#http" title="开启http代理" class="md-nav__link">
-    开启http代理
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" title="设置代理" class="md-nav__link">
-    设置代理
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ip" title="查看IP地址" class="md-nav__link">
-    查看IP地址
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="安装电脑端证书" class="md-nav__link">
-    安装电脑端证书
+  <a href="#token" title="Token存储到全局变量" class="md-nav__link">
+    Token存储到全局变量
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" title="证书安装" class="md-nav__link">
-    证书安装
+  <a href="#token_1" title="存储Token代码" class="md-nav__link">
+    存储Token代码
   </a>
   
 </li>
@@ -339,22 +328,62 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" title="手机端配置" class="md-nav__link">
-    手机端配置
+  <a href="#token_2" title="使用全局变量中的Token" class="md-nav__link">
+    使用全局变量中的Token
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="快速切换调试环境" class="md-nav__link">
+    快速切换调试环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="手工配置全局变量" class="md-nav__link">
+    手工配置全局变量
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" title="手机证书安装" class="md-nav__link">
-    手机证书安装
+  <a href="#_4" title="配置示例" class="md-nav__link">
+    配置示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="使用全局变量环境" class="md-nav__link">
+    使用全局变量环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="使用" class="md-nav__link">
+    使用
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" title="查看手机安装证书路径" class="md-nav__link">
-    查看手机安装证书路径
+  <a href="#_7" title="工作区" class="md-nav__link">
+    工作区
   </a>
   
 </li>
@@ -372,6 +401,78 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../04.Sublime/" title="04.Sublime" class="md-nav__link">
+      04.Sublime
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../05.mkdocs/" title="05.mkdocs" class="md-nav__link">
+      05.mkdocs
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../06.AillustratorCC/" title="06.AillustratorCC" class="md-nav__link">
+      06.AillustratorCC
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../07.Swagger/" title="07.Swagger" class="md-nav__link">
+      07.Swagger
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../08.AdobePhotoshop/" title="08.AdobePhotoshop" class="md-nav__link">
+      08.AdobePhotoshop
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../09.MongoDB/" title="09.MongoDB" class="md-nav__link">
+      09.MongoDB
+    </a>
   </li>
 
     
@@ -447,102 +548,6 @@
   </li>
 
     
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../2.IDEA/" title="2.IDEA" class="md-nav__link">
-      2.IDEA
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../3.PostMan/" title="3.PostMan" class="md-nav__link">
-      3.PostMan
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../4.Sublime/" title="4.Sublime" class="md-nav__link">
-      4.Sublime
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../5.mkdocs/" title="5.mkdocs" class="md-nav__link">
-      5.mkdocs
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../6.AillustratorCC/" title="6.AillustratorCC" class="md-nav__link">
-      6.AillustratorCC
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../7.Swagger/" title="7.Swagger" class="md-nav__link">
-      7.Swagger
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../8.AdobePhotoshop/" title="8.AdobePhotoshop" class="md-nav__link">
-      8.AdobePhotoshop
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../9.MongoDB/" title="9.MongoDB" class="md-nav__link">
-      9.MongoDB
-    </a>
-  </li>
-
-    
   </ul>
 </nav>
                   </div>
@@ -564,59 +569,24 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="简介" class="md-nav__link">
-    简介
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" title="下载地址" class="md-nav__link">
-    下载地址
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" title="配置" class="md-nav__link">
-    配置
+  <a href="#_1" title="免登陆调试" class="md-nav__link">
+    免登陆调试
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#http" title="开启http代理" class="md-nav__link">
-    开启http代理
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" title="设置代理" class="md-nav__link">
-    设置代理
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ip" title="查看IP地址" class="md-nav__link">
-    查看IP地址
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" title="安装电脑端证书" class="md-nav__link">
-    安装电脑端证书
+  <a href="#token" title="Token存储到全局变量" class="md-nav__link">
+    Token存储到全局变量
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_6" title="证书安装" class="md-nav__link">
-    证书安装
+  <a href="#token_1" title="存储Token代码" class="md-nav__link">
+    存储Token代码
   </a>
   
 </li>
@@ -627,22 +597,62 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" title="手机端配置" class="md-nav__link">
-    手机端配置
+  <a href="#token_2" title="使用全局变量中的Token" class="md-nav__link">
+    使用全局变量中的Token
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="快速切换调试环境" class="md-nav__link">
+    快速切换调试环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="手工配置全局变量" class="md-nav__link">
+    手工配置全局变量
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" title="手机证书安装" class="md-nav__link">
-    手机证书安装
+  <a href="#_4" title="配置示例" class="md-nav__link">
+    配置示例
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="使用全局变量环境" class="md-nav__link">
+    使用全局变量环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="使用" class="md-nav__link">
+    使用
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_9" title="查看手机安装证书路径" class="md-nav__link">
-    查看手机安装证书路径
+  <a href="#_7" title="工作区" class="md-nav__link">
+    工作区
   </a>
   
 </li>
@@ -668,39 +678,48 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/fuuqiu/mdTools/edit/master/docs/1.Charles.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/fuuqiu/mdTools/edit/master/docs/03.PostMan.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="charles">Charles抓包工具</h1>
-<pre><code>最近换了工作,换了城市.几乎除了我没换其他的都换了.又是一段新的生活开始...
+                <h1 id="postman">PostMan接口调试工具</h1>
+<pre><code>最近因为写接口比较多,也是刚换到现在的组合软件记录笔记.会有很多变动,样式和记录风格又做了一小部分的调整
+目前笔记编写只有本人参与,希望后期有更多的小伙伴参与其中
 </code></pre>
 
-<h2 id="_1">简介</h2>
-<p>Charles是一个HTTP代理服务器,HTTP监视器,反转代理服务器，当浏览器连接Charles的代理访问互联网时，Charles可以监控浏览器发送和接收的所有数据。它允许一个开发者查看所有连接互联网的HTTP通信，这些包括request, response和HTTP headers （包含cookies与caching信息）。</p>
-<h2 id="_2">下载地址</h2>
-<pre><code>Charles下载：http://www.macbl.com/app/internet/charles
+<p>接口呈现使用Swagger来编写,因为也是刚开始接触,使用不是很熟练,基本上是在Postman中调试成功,才会在Swagger中编写Open API ,在这里感谢Kevin大神的指导,让我接触到了更广阔的世界中</p>
+<h2 id="_1">免登陆调试</h2>
+<h3 id="token">Token存储到全局变量</h3>
+<p>通常很多请求接口都是私密的,每次请求都需要携带token,而每次登录token都会改变,为了避免每次请求都需要手工携带token,就需要在登陆的时候将token存储在全局变量中</p>
+<p><img alt="image-20180724221433354" src="../assets/image-20180724221433354.png" /></p>
+<p>通过以上方式,可以将token存储到全局变量中.变量名:access_token</p>
+<h4 id="token_1">存储Token代码</h4>
+<pre><code class="javascript">pm.test(&quot;Status code is 200&quot;, function () {  
+    pm.response.to.have.status(200);  
+});  
+
+// 把responseBody转为json字符串  
+var data = JSON.parse(responseBody);  
+// 设置环境变量token，供后面的接口引用  
+pm.environment.set(&quot;token&quot;, data.data.token);  
 </code></pre>
 
-<h2 id="_3">配置</h2>
-<h3 id="http">开启http代理</h3>
-<p><img alt="1" src="../imgs/1.png" /></p>
-<h3 id="_4">设置代理</h3>
-<p><img alt="image-20180719202209105" src="../imgs/image-20180719202209105.png" /></p>
-<h3 id="ip">查看IP地址</h3>
-<p><img alt="image-20180719202615540" src="../imgs/image-20180719202615540.png" /></p>
-<h3 id="_5">安装电脑端证书</h3>
-<p><img alt="image-20180719202748161" src="../imgs/image-20180719202748161.png" /></p>
-<h4 id="_6">证书安装</h4>
-<p><img alt="image-20180719203112294" src="../imgs/image-20180719203112294.png" />
-<img alt="image-20180719203213498" src="../imgs/image-20180719203213498.png" /></p>
-<h3 id="_7">手机端配置</h3>
-<p><img alt="image-20180719203736401" src="../imgs/image-20180719203736401.png" />
-<img alt="image-20180719203837579" src="../imgs/image-20180719203837579.png" />
-<img alt="image-20180719204039640" src="../imgs/image-20180719204039640.png" /></p>
-<h3 id="_8">手机证书安装</h3>
-<p><img alt="image-20180719204331961" src="../imgs/image-20180719204331961.png" /></p>
-<h3 id="_9">查看手机安装证书路径</h3>
-<p><img alt="image-20180719204607956" src="../imgs/image-20180719204607956.png" /></p>
+<h3 id="token_2">使用全局变量中的Token</h3>
+<p><img alt="image-20180724221902799" src="../assets/image-20180724221902799.png" /></p>
+<h2 id="_2">快速切换调试环境</h2>
+<p>在开发中我们通常会遇到开发环境,测试环境,正式环境…,如果每一个接口都去修改请求路径也是一件费神的事</p>
+<h3 id="_3">手工配置全局变量</h3>
+<p><img alt="image-20180724222225719" src="../assets/image-20180724222225719.png" /></p>
+<h3 id="_4">配置示例</h3>
+<p><img alt="image-20180724222303034" src="../assets/image-20180724222303034.png" /></p>
+<p>说明:使用变量语法 {{var_name}}</p>
+<p><img alt="img" src="../assets/42167564.png" /></p>
+<h2 id="_5">使用全局变量环境</h2>
+<p><img alt="img" src="../assets/42223285.png" /></p>
+<h3 id="_6">使用</h3>
+<p><img alt="img" src="../assets/42251582.png" /></p>
+<p>请求参数也可以如此使用</p>
+<h3 id="_7">工作区</h3>
+<p><img alt="img" src="../assets/42324527.png" /></p>
                 
                   
                 
@@ -721,7 +740,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href=".." title="说明文档" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../02.IDEA/" title="02.IDEA" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -730,19 +749,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                说明文档
+                02.IDEA
               </span>
             </div>
           </a>
         
         
-          <a href="../10.AdminMongo/" title="10.AdminMongo" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../04.Sublime/" title="04.Sublime" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                10.AdminMongo
+                04.Sublime
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
