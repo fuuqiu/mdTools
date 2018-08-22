@@ -40,7 +40,7 @@
     
     
       
-        <title>CentOS系统 - 程序员常用工具使用教程</title>
+        <title>Docker容器 - 程序员常用工具使用教程</title>
       
     
     
@@ -94,7 +94,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#centos" tabindex="1" class="md-skip">
+      <a href="#docker" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -120,7 +120,7 @@
                 程序员常用工具使用教程
               </span>
               <span class="md-header-nav__topic">
-                CentOS系统
+                Docker容器
               </span>
             
           
@@ -391,6 +391,78 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../13.CentOS防火墙/" title="CentOS系统" class="md-nav__link">
+      CentOS系统
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../14.MacOS/" title="MacOS系统使用" class="md-nav__link">
+      MacOS系统使用
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../15.Windows2008/" title="Windows 2008基本配置" class="md-nav__link">
+      Windows 2008基本配置
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../16.Synergy/" title="Synergy鼠标共享方案" class="md-nav__link">
+      Synergy鼠标共享方案
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../17.duic配置/" title="高性能配置管理中心 duic" class="md-nav__link">
+      高性能配置管理中心 duic
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../18.iTerm2/" title="iTerm2" class="md-nav__link">
+      iTerm2
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -402,11 +474,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        CentOS系统
+        Docker容器
       </label>
     
-    <a href="./" title="CentOS系统" class="md-nav__link md-nav__link--active">
-      CentOS系统
+    <a href="./" title="Docker容器" class="md-nav__link md-nav__link--active">
+      Docker容器
     </a>
     
       
@@ -420,113 +492,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="防火墙的基本操作命令：" class="md-nav__link">
-    防火墙的基本操作命令：
+  <a href="#_1" title="简介" class="md-nav__link">
+    简介
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux" title="linux目录介绍" class="md-nav__link">
-    linux目录介绍
+  <a href="#1" title="1.命令解读" class="md-nav__link">
+    1.命令解读
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gogs-git" title="Gogs Git服务安装" class="md-nav__link">
-    Gogs Git服务安装
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github" title="Github新建仓库发布" class="md-nav__link">
-    Github新建仓库发布
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#svn" title="SVN服务安装" class="md-nav__link">
-    SVN服务安装
+  <a href="#_2" title="日志" class="md-nav__link">
+    日志
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1svn" title="1.安装svn" class="md-nav__link">
-    1.安装svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2svn" title="2.启动svn" class="md-nav__link">
-    2.启动svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3apr" title="3.将apr依赖包添加到共享库" class="md-nav__link">
-    3.将apr依赖包添加到共享库
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" title="4.检测是否安装成功" class="md-nav__link">
-    4.检测是否安装成功
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5svn" title="5.启动svn" class="md-nav__link">
-    5.启动svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" title="6.配置当前的版本库" class="md-nav__link">
-    6.配置当前的版本库
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7passwd" title="7.修改passwd" class="md-nav__link">
-    7.修改passwd
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8authz" title="8.修改authz文件" class="md-nav__link">
-    8.修改authz文件
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9svn" title="9.停止和启动svn" class="md-nav__link">
-    9.停止和启动svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10svn" title="10.使用svn客户端" class="md-nav__link">
-    10.使用svn客户端
+  <a href="#docker_1" title="Docker 引擎日志" class="md-nav__link">
+    Docker 引擎日志
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mariadb" title="安装MariaDB镜像" class="md-nav__link">
+    安装MariaDB镜像
+  </a>
   
 </li>
       
@@ -538,78 +540,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../14.MacOS/" title="14.MacOS" class="md-nav__link">
-      14.MacOS
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../15.Windows2008/" title="15.Windows2008" class="md-nav__link">
-      15.Windows2008
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../16.Synergy/" title="16.Synergy" class="md-nav__link">
-      16.Synergy
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../17.duic配置/" title="17.duic配置" class="md-nav__link">
-      17.duic配置
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../18.iTerm2/" title="18.iTerm2" class="md-nav__link">
-      18.iTerm2
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../19.Docker/" title="19.Docker" class="md-nav__link">
-      19.Docker
-    </a>
   </li>
 
     
@@ -634,113 +564,43 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="防火墙的基本操作命令：" class="md-nav__link">
-    防火墙的基本操作命令：
+  <a href="#_1" title="简介" class="md-nav__link">
+    简介
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#linux" title="linux目录介绍" class="md-nav__link">
-    linux目录介绍
+  <a href="#1" title="1.命令解读" class="md-nav__link">
+    1.命令解读
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#gogs-git" title="Gogs Git服务安装" class="md-nav__link">
-    Gogs Git服务安装
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#github" title="Github新建仓库发布" class="md-nav__link">
-    Github新建仓库发布
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#svn" title="SVN服务安装" class="md-nav__link">
-    SVN服务安装
+  <a href="#_2" title="日志" class="md-nav__link">
+    日志
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1svn" title="1.安装svn" class="md-nav__link">
-    1.安装svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2svn" title="2.启动svn" class="md-nav__link">
-    2.启动svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3apr" title="3.将apr依赖包添加到共享库" class="md-nav__link">
-    3.将apr依赖包添加到共享库
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4" title="4.检测是否安装成功" class="md-nav__link">
-    4.检测是否安装成功
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5svn" title="5.启动svn" class="md-nav__link">
-    5.启动svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6" title="6.配置当前的版本库" class="md-nav__link">
-    6.配置当前的版本库
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7passwd" title="7.修改passwd" class="md-nav__link">
-    7.修改passwd
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#8authz" title="8.修改authz文件" class="md-nav__link">
-    8.修改authz文件
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#9svn" title="9.停止和启动svn" class="md-nav__link">
-    9.停止和启动svn
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#10svn" title="10.使用svn客户端" class="md-nav__link">
-    10.使用svn客户端
+  <a href="#docker_1" title="Docker 引擎日志" class="md-nav__link">
+    Docker 引擎日志
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mariadb" title="安装MariaDB镜像" class="md-nav__link">
+    安装MariaDB镜像
+  </a>
   
 </li>
       
@@ -760,167 +620,166 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/fuuqiu/mdTools/edit/master/docs/13.CentOS防火墙.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/fuuqiu/mdTools/edit/master/docs/19.Docker.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="centos">CentOS系统</h1>
-<h2 id="_1">防火墙的基本操作命令：</h2>
-<pre><code class="Shell">查询防火墙状态:
-$ service   iptables status
-#停止防火墙:
-$ service   iptables stop 
-#启动防火墙:
-$ service   iptables start 
-#重启防火墙:
-$ service   iptables restart
-#永久关闭防火墙:
-$ chkconfig   iptables off
-#永久关闭后启用:
-$ chkconfig   iptables on
-</code></pre>
-
-<h2 id="linux">linux目录介绍</h2>
-<p><img alt="img" src="../assets/36214241.png" /></p>
-<h2 id="gogs-git">Gogs Git服务安装</h2>
-<p>安装docker</p>
-<pre><code class="Shell">$ sudo yum install docker
-</code></pre>
-
-<p>启动并加入开机启动</p>
-<pre><code class="Shell">$ sudo systemctl start docker 
-$ sudo systemctl enable docker
-</code></pre>
-
-<p>拉取Github</p>
-<pre><code class="Shell"> $ docker pull gogs/gogs
-</code></pre>
-
-<p>启动gogs 浏览器访问:http://ip:8081</p>
-<pre><code class="Shell">docker run --name=gogs -p 10022:22 -p 8081:3000 -v /home/gogs:/data gogs/gogs
-</code></pre>
-
-<p>Dock 官方手册</p>
-<pre><code class="Shell"># Pull image from Docker Hub.
-$ docker pull gogs/gogs
-
-# Create local directory for volume.
-$ mkdir -p /var/gogs
-
-# Use `docker run` for the first time.
-$ docker run --name=gogs -p 10022:22 -p 10080:3000 -v /var/gogs:/data gogs/gogs
-
-# Use `docker start` if you have stopped it.
-$ docker start gogs
-</code></pre>
-
-<h2 id="github">Github新建仓库发布</h2>
-<pre><code class="Shell">echo &quot;# test&quot; &gt;&gt; README.md
-git init
-git add README.md
-git commit -m &quot;first commit&quot;
-git remote add origin https://github.com/fuuqiu/test.git
-git push -u origin master
-</code></pre>
-
-<h2 id="svn">SVN服务安装</h2>
-<h4 id="1svn">1.安装svn</h4>
-<pre><code class="Shell">$ yum -y install subversion
-</code></pre>
-
-<h4 id="2svn">2.启动svn</h4>
-<pre><code class="Shell">$ svnserve -d -r /www/svndata
-</code></pre>
-
-<p>启动svn时以下异常</p>
-<p>svnserve: error while loading shared libraries: libaprutil-1.so.0: cannot open shared object file: No such file or directory</p>
-<h4 id="3apr">3.将apr依赖包添加到共享库</h4>
-<p>查看共享库配置文件</p>
-<pre><code class="Shell">$ more /etc/ld.so.conf``include ld.so.conf.d/*.conf
-</code></pre>
-
-<p>创建apr共享库配置文件</p>
-<pre><code class="Shell">$ cd /etc/ld.so.conf.d/``vi httpd-apr.conf``/www/wdlinux/httpd-2.2.22/lib/    #路劲注意,是查询到lib级
-</code></pre>
-
-<p>更新共享库配置</p>
-<pre><code class="shell">$ ldconfig -v
-</code></pre>
-
-<h4 id="4">4.检测是否安装成功</h4>
-<pre><code class="shell">$ svn --version
-</code></pre>
-
-<p>结果为        <img alt="img" src="../assets/47071409.png" /></p>
-<p>此时说明已将安装成功</p>
-<h4 id="5svn">5.启动svn</h4>
-<pre><code class="Shell">$ mkdir /var/svn #我这里把版本库放在了var目录下的svn文件夹，方便管理 
-$ svnadmin create /var/svn/apps #我这里将svn作为所有版本库的目录，并创建了一个名为apps的版本库
-$ svnserve -d -r /var/svn/      #启动 这里先不要执行,带后面配置完成后执行该条命令`
-</code></pre>
-
-<h4 id="6">6.配置当前的版本库</h4>
-<p>进入刚才创建的apps版本库的文件夹：cd /var/svn/apps，可以使用ll命令查看这个文件夹中有哪些文件，之后进入conf文件夹，命令cd conf/说明如下：</p>
+                <h1 id="docker">Docker容器</h1>
+<h3 id="_1">简介</h3>
+<p>Docker是开发人员和系统管理员 使用容器<strong>开发，部署和运行</strong>应用程序的平台。使用Linux容器部署应用程序称为<em>容器化</em>。容器不是新的，但它们用于轻松部署应用程序。</p>
+<h2 id="1">1.命令解读</h2>
 <ul>
-<li>svnserve.conf：svn服务综合配置文件。</li>
-<li>passwd： 用户名口令文件。</li>
-<li>authz： 权限配置文件。</li>
+<li>查看容器相关信息</li>
 </ul>
-<h4 id="7passwd">7.修改passwd</h4>
-<p>​        在此文件中可以添加用户和对应的密码；打开passwd文件命令如下：</p>
-<pre><code class="Shell">$ vi passwd #在其中加入如下的配置：
-#formatusername=password
-#user1=user1Pwd
-#user2=user2Pwd
+<pre><code class="shell">$ docker version
+# 或者
+$ docker info
 </code></pre>
 
-<h4 id="8authz">8.修改authz文件</h4>
-<p>在此文件可以定义权限组，分别分为测试组和开发组；<strong>命令如下</strong></p>
-<pre><code class="markdown">harry_and_sally = harry,sally 
-harry_sally_and_joe = harry,sally,&amp;joe
-developer=user1,user2
-tester=user1
+<ul>
+<li>查看版本</li>
+</ul>
+<pre><code class="shell">$ docker --version
 </code></pre>
 
-<p>定义组的读写权限，定义在版本库上</p>
-<pre><code class="markdown">@developer=rw 
-@tester=r
+<ul>
+<li>查看网络列表</li>
+</ul>
+<pre><code class="shell">$ docker network ls
 </code></pre>
 
-<p><strong>修改svnserve.conf</strong></p>
-<p>​    将以下几行的注释符号<strong>#</strong>去掉 </p>
-<pre><code class="markdown">anon-access = none #没有登录的用户不能访问 
-auth-access = write #登录的用户可以写入 
-password-db = passwd #密码文件为当前目录下的 
-passwd authz-db = authz #验证文件为当前目录下的authz 
-//服务器这句需要加上paaswd前缀,不同版本可能不尽相同
+<ul>
+<li>这种形式创建一个服务的时候,要求映射集群端口80到服务容器的80端口.</li>
+</ul>
+<pre><code class="shell">$ docker service create -p 80:80
 </code></pre>
 
-<h4 id="_2"></h4>
-<h4 id="9svn">9.停止和启动svn</h4>
-<p>启动svn：</p>
-<pre><code class="shell">$ svnserve -d -r /var/svn/ 
+<ul>
+<li>查看沙箱容器的配置</li>
+</ul>
+<pre><code class="shell">$ docker network inspect ingress   #ingres 容器名称
 </code></pre>
 
-<p>查看svn是否启动（看是否有进程存在）:</p>
-<pre><code class="Shell">$ ps -aux |grep svn 
+<ul>
+<li>动态修改内存限制</li>
+</ul>
+<pre><code class="shell">$ docker update -m 300m
 </code></pre>
 
-<p>关闭svn：</p>
-<pre><code class="shell">$ kill -9 progressId 
+<ul>
+<li>查看容器列表</li>
+</ul>
+<pre><code class="shell">$ docker ps -a
 </code></pre>
 
-<p>重启svn，为了增加svn的安全性，这里将svnm的默认端口3690改为6534。</p>
-<pre><code class="shell">#关闭svn服务
-killall svnserve
-#新的端口启动
-svnserve -d -r /www/svndata --listen-port 6534
-#当然，如果出于安全性的考虑，你还可以添加https的支持。这里就不再详述。
+<ul>
+<li>Docker 需要用户具有 sudo 权限，为了避免每次命令都输入<code>sudo</code>，可以把用户加入 Docker 用户组</li>
+</ul>
+<blockquote>
+<p><code>shell
+$ sudo usermod -aG docker $USER</code></p>
+</blockquote>
+<ul>
+<li>依赖包</li>
+</ul>
+<pre><code class="Shell"># 列出本机的所有 image 文件。
+$ docker image ls
+
+# 删除 image 文件
+$ docker image rm [imageName]
 </code></pre>
 
-<h4 id="10svn">10.使用svn客户端</h4>
-<pre><code class="Shell">#svn客户端中使用
-#svn://你的IP:端口/项目名称/”   进行项目的下载和管理等，当然你也可以通过命令行进行管理，这就见仁见智了。
-#svn://你的IP:端口/项目名称/
+<h2 id="_2">日志</h2>
+<h4 id="docker_1">Docker 引擎日志</h4>
+<p>Docker 引擎日志 一般是交给了 Upstart(Ubuntu 14.04) 或者systemd (CentOS 7, Ubuntu 16.04)。前者一般位于 /var/log/upstart/docker.log 下，后者一般通过 jounarlctl -u docker` 来读取。不同系统的位置都不一样，SO上有人总结了一份列表，我修正了一下，可以参考</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>日志位置</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ubuntu(14.04)</td>
+<td>/var/log/upstart/docker.log</td>
+</tr>
+<tr>
+<td>Ubuntu(16.04)</td>
+<td>journalctl -u docker.service</td>
+</tr>
+<tr>
+<td>CentOS 7/RHEL 7/Fedora</td>
+<td>journalctl -u docker.service</td>
+</tr>
+<tr>
+<td>CoreOS</td>
+<td>journalctl -u docker.service</td>
+</tr>
+<tr>
+<td>OpenSuSE</td>
+<td>journalctl -u docker.service</td>
+</tr>
+<tr>
+<td>OSX</td>
+<td>~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/log/d‌ocker.log</td>
+</tr>
+<tr>
+<td>Debian GNU/Linux 7</td>
+<td>/var/log/daemon.log</td>
+</tr>
+<tr>
+<td>Debian GNU/Linux 8</td>
+<td>journalctl -u docker.service</td>
+</tr>
+<tr>
+<td>Boot2Docker</td>
+<td>/var/log/docker.log</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mariadb">安装MariaDB镜像</h2>
+<ul>
+<li>1.查询MariaDB版本</li>
+</ul>
+<pre><code class="shell">$ docker search mariadb
+</code></pre>
+
+<ul>
+<li>2.安装</li>
+</ul>
+<pre><code class="shell">$ docker pull mariadb
+</code></pre>
+
+<ul>
+<li>启动MariaDB容器</li>
+</ul>
+<pre><code class="shell">$ docker run --name mariadb -e MYSQL_ROOT_PASSWORD=root -d mariadb
+</code></pre>
+
+<ul>
+<li>查看运行的容器列表</li>
+</ul>
+<pre><code class="shell">$ docker ps -a
+</code></pre>
+
+<ul>
+<li>停止运行的容器</li>
+</ul>
+<pre><code class="Shell">$ docker stop mariadb      #通过name停止
+$ docker stop 7a83d1d4ecb4 #通过ID停止
+</code></pre>
+
+<ul>
+<li>删除一个容器</li>
+</ul>
+<pre><code class="shell">$ docker rm mariadb      #通过name删除
+$ docker rm 7a83d1d4ecb4 #通过ID删除
+</code></pre>
+
+<ul>
+<li>查看容器启动日志</li>
+</ul>
+<pre><code class="shell">$ docker logs api #api:容器名称
 </code></pre>
                 
                   
@@ -942,7 +801,7 @@ svnserve -d -r /www/svndata --listen-port 6534
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../12.ShellTree/" title="新的生活节奏" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../18.iTerm2/" title="iTerm2" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -951,25 +810,11 @@ svnserve -d -r /www/svndata --listen-port 6534
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                新的生活节奏
+                iTerm2
               </span>
             </div>
           </a>
         
-        
-          <a href="../14.MacOS/" title="14.MacOS" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                14.MacOS
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
