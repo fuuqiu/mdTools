@@ -261,8 +261,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../02.IDEA/" title="02.IDEA" class="md-nav__link">
-      02.IDEA
+    <a href="../02.IDEA/" title="IDEA开发工具" class="md-nav__link">
+      IDEA开发工具
     </a>
   </li>
 
@@ -523,6 +523,18 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../20.Git/" title="20.Git" class="md-nav__link">
+      20.Git
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -620,6 +632,28 @@ expect {
         {send &quot;[lindex $argv 3]\n&quot;}
 }
 interact
+
+</code></pre>
+
+<p>SSH上传文件和下载文件</p>
+<pre><code class="Shell">#安装 SSH(Secure Shell) 服务以提供远程管理服务 
+$ sudo apt-get install ssh
+
+#SSH 远程登入 Ubuntu 机 
+$ ssh username@192.168.0.1
+
+#将 文件/文件夹 从远程 Ubuntu 机拷至本地(scp) 
+$ scp -r username@192.168.0.1:/home/username/remotefile.txt
+
+#将 文件/文件夹 从本地拷至远程 Ubuntu 机(scp) 
+$ scp -r localfile.txt username@192.168.0.1:/home/username/
+
+#将 文件/文件夹 从远程 Ubuntu 机拷至本地(rsync)
+
+$ rsync -v -u -a --delete --rsh=ssh --stats sername@192.168.0.1:/home/username/remotefile.txt
+
+#将 文件/文件夹 从本地拷至远程 Ubuntu 机(rsync)
+$ rsync -v -u -a --delete --rsh=ssh --stats localfile.txt username@192.168.0.1:/home/username/
 
 </code></pre>
                 

@@ -261,8 +261,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../02.IDEA/" title="02.IDEA" class="md-nav__link">
-      02.IDEA
+    <a href="../02.IDEA/" title="IDEA开发工具" class="md-nav__link">
+      IDEA开发工具
     </a>
   </li>
 
@@ -499,6 +499,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#docker_1" title="启动Docker" class="md-nav__link">
+    启动Docker
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="设置开机启动" class="md-nav__link">
+    设置开机启动
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1" title="1.命令解读" class="md-nav__link">
     1.命令解读
   </a>
@@ -506,7 +526,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="日志" class="md-nav__link">
+  <a href="#_3" title="日志" class="md-nav__link">
     日志
   </a>
   
@@ -514,7 +534,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#docker_1" title="Docker 引擎日志" class="md-nav__link">
+  <a href="#docker_2" title="Docker 引擎日志" class="md-nav__link">
     Docker 引擎日志
   </a>
   
@@ -532,6 +552,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#redismongo" title="Redis/Mongo" class="md-nav__link">
+    Redis/Mongo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#php" title="PHP相关" class="md-nav__link">
+    PHP相关
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx" title="Nginx:" class="md-nav__link">
+    Nginx:
+  </a>
+  
+</li>
+      
       
       
       
@@ -540,6 +581,18 @@
   
 </nav>
     
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../20.Git/" title="20.Git" class="md-nav__link">
+      20.Git
+    </a>
   </li>
 
     
@@ -571,6 +624,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#docker_1" title="启动Docker" class="md-nav__link">
+    启动Docker
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="设置开机启动" class="md-nav__link">
+    设置开机启动
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#1" title="1.命令解读" class="md-nav__link">
     1.命令解读
   </a>
@@ -578,7 +651,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="日志" class="md-nav__link">
+  <a href="#_3" title="日志" class="md-nav__link">
     日志
   </a>
   
@@ -586,7 +659,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#docker_1" title="Docker 引擎日志" class="md-nav__link">
+  <a href="#docker_2" title="Docker 引擎日志" class="md-nav__link">
     Docker 引擎日志
   </a>
   
@@ -600,6 +673,27 @@
         <li class="md-nav__item">
   <a href="#mariadb" title="安装MariaDB镜像" class="md-nav__link">
     安装MariaDB镜像
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redismongo" title="Redis/Mongo" class="md-nav__link">
+    Redis/Mongo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#php" title="PHP相关" class="md-nav__link">
+    PHP相关
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nginx" title="Nginx:" class="md-nav__link">
+    Nginx:
   </a>
   
 </li>
@@ -626,6 +720,18 @@
                 <h1 id="docker">Docker容器</h1>
 <h3 id="_1">简介</h3>
 <p>Docker是开发人员和系统管理员 使用容器<strong>开发，部署和运行</strong>应用程序的平台。使用Linux容器部署应用程序称为<em>容器化</em>。容器不是新的，但它们用于轻松部署应用程序。</p>
+<h2 id="docker_1">启动Docker</h2>
+<pre><code class="shell">$ service docker start  #启动docker 服务
+</code></pre>
+
+<h3 id="_2">设置开机启动</h3>
+<pre><code class="shell">$ su root # 先切换到root用户, 再执行以下命令
+$ systemctl enable docker # 开机自动启动docker
+
+$ systemctl start docker # 启动docker
+$ systemctl restart docker # 重启dokcer
+</code></pre>
+
 <h2 id="1">1.命令解读</h2>
 <ul>
 <li>查看容器相关信息</li>
@@ -672,7 +778,7 @@ $ docker info
 </code></pre>
 
 <ul>
-<li>Docker 需要用户具有 sudo 权限，为了避免每次命令都输入<code>sudo</code>，可以把用户加入 Docker 用户组</li>
+<li>Docker 需要用户具有 sudo 权限，为了避免每次命令都输入sudo，可以把用户加入 Docker 用户组</li>
 </ul>
 <blockquote>
 <p><code>shell
@@ -682,14 +788,14 @@ $ sudo usermod -aG docker $USER</code></p>
 <li>依赖包</li>
 </ul>
 <pre><code class="Shell"># 列出本机的所有 image 文件。
-$ docker image ls
+$ docker images
 
 # 删除 image 文件
 $ docker image rm [imageName]
 </code></pre>
 
-<h2 id="_2">日志</h2>
-<h4 id="docker_1">Docker 引擎日志</h4>
+<h2 id="_3">日志</h2>
+<h4 id="docker_2">Docker 引擎日志</h4>
 <p>Docker 引擎日志 一般是交给了 Upstart(Ubuntu 14.04) 或者systemd (CentOS 7, Ubuntu 16.04)。前者一般位于 /var/log/upstart/docker.log 下，后者一般通过 jounarlctl -u docker` 来读取。不同系统的位置都不一样，SO上有人总结了一份列表，我修正了一下，可以参考</p>
 <table>
 <thead>
@@ -739,21 +845,38 @@ $ docker image rm [imageName]
 </table>
 <h2 id="mariadb">安装MariaDB镜像</h2>
 <ul>
-<li>1.查询MariaDB版本</li>
+<li>查询MariaDB版本</li>
 </ul>
 <pre><code class="shell">$ docker search mariadb
 </code></pre>
 
 <ul>
-<li>2.安装</li>
+<li>安装</li>
 </ul>
 <pre><code class="shell">$ docker pull mariadb
 </code></pre>
 
 <ul>
-<li>启动MariaDB容器</li>
+<li>运行MariaDB容器</li>
 </ul>
 <pre><code class="shell">$ docker run --name mariadb -e MYSQL_ROOT_PASSWORD=root -d mariadb
+</code></pre>
+
+<ul>
+<li>端口映射</li>
+</ul>
+<pre><code>docker run --name mariadb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb
+# -d 后台守护进程
+# -p 端口映射配置
+# --name 别名
+# MYSQL_ROOT_PASSWORD 设置root账户的密码
+</code></pre>
+
+<ul>
+<li>启动MariaDB</li>
+</ul>
+<pre><code class="shell">$ docker start mariadb      #通过name停止
+$ docker start 7a83d1d4ecb4 #通过ID停止
 </code></pre>
 
 <ul>
@@ -780,6 +903,37 @@ $ docker rm 7a83d1d4ecb4 #通过ID删除
 <li>查看容器启动日志</li>
 </ul>
 <pre><code class="shell">$ docker logs api #api:容器名称
+</code></pre>
+
+<h2 id="redismongo">Redis/Mongo</h2>
+<pre><code>docker run --name redis -p 6379:6379 -d redis
+docker run --name redis -h 127.0.0.1 -p 6379:6379 -d redis
+
+
+docker inspect redis
+
+
+docker run --name mongo -p 27017:27017 -d mongo
+
+</code></pre>
+
+<h2 id="php">PHP相关</h2>
+<pre><code class="shell">$ docker pull php:5.4-fpm #5.4-fpm为版本表示
+</code></pre>
+
+<h2 id="nginx">Nginx:</h2>
+<pre><code class="shell">$ docker run --name nginx -p 80:80 -d nginx:latest
+</code></pre>
+
+<pre><code class="markdown">我是直接拉取的docker hub的nginx镜像
+在容器中相关位置分别是：
+日志位置：/var/log/nginx/
+配置文件位置：/etc/nginx/
+项目位置：/usr/share/nginx/html
+</code></pre>
+
+<pre><code class="shell">$ 
+#scp /Users/apple/Desktop/dist root@39.108.163.60:&lt;上传保存路径即文件名&gt;
 </code></pre>
                 
                   
@@ -815,6 +969,20 @@ $ docker rm 7a83d1d4ecb4 #通过ID删除
             </div>
           </a>
         
+        
+          <a href="../20.Git/" title="20.Git" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                20.Git
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
