@@ -30,7 +30,4 @@ mkdocs+Typora+Github在线管理Markdown在线文档
 
 ## 参与者：
 
-Fuuqiu  提交到哪里去了? 现在处理好了么>???
-
-x
-
+Fuuqiu  
