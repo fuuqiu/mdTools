@@ -30,5 +30,5 @@ mkdocs+Typora+Github在线管理Markdown在线文档
 
 ## 参与者：
 
-Fuuqiu
+Fuuqiu (Fuuqiu@163.com)
 
