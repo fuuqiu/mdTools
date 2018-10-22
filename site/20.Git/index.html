@@ -492,6 +492,30 @@
   </li>
 
     
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../21.LINUX/" title="21.LINUX" class="md-nav__link">
+      21.LINUX
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../22.Node/" title="22.Node" class="md-nav__link">
+      22.Node
+    </a>
+  </li>
+
+    
   </ul>
 </nav>
                   </div>
@@ -524,26 +548,38 @@
                 
                 <h1 id="git">Git</h1>
 <ul>
-<li>修改远程仓库地址</li>
+<li>Git 全局设置:</li>
 </ul>
-<pre><code>git remote origin set-url [url]
+<pre><code>git config --global user.name &quot;Fuuqiu&quot;
+git config --global user.email &quot;fuuqiu@163.com&quot;
 </code></pre>
 
 <ul>
-<li>如果你想先删后加的话</li>
+<li>查看用户名和邮箱地址：</li>
 </ul>
-<pre><code>git remote rm origin
-git remote add origin [url]
-</code></pre>
-
-<p>查看用户名和邮箱地址：</p>
 <pre><code>git config user.name
 git config user.email
 </code></pre>
 
-<p>修改提交的用户名和Email</p>
-<pre><code>git config --global user.name &quot;Your Name&quot;  
-git config --global user.email you@example.com
+<ul>
+<li>创建 git 仓库:</li>
+</ul>
+<pre><code>mkdir s123s
+cd s123s
+git init
+touch README.md
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin git@gitee.com:fuuqiu/s123s.git
+git push -u origin master
+</code></pre>
+
+<ul>
+<li>已有项目?</li>
+</ul>
+<pre><code>cd existing_git_repo
+git remote add origin git@gitee.com:fuuqiu/s123s.git
+git push -u origin master
 </code></pre>
                 
                   
@@ -579,6 +615,20 @@ git config --global user.email you@example.com
             </div>
           </a>
         
+        
+          <a href="../21.LINUX/" title="21.LINUX" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                21.LINUX
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

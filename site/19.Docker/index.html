@@ -560,15 +560,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#php" title="PHP相关" class="md-nav__link">
-    PHP相关
+  <a href="#php" title="PHP:超文本预处理语言" class="md-nav__link">
+    PHP:超文本预处理语言
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nginx" title="Nginx:" class="md-nav__link">
-    Nginx:
+  <a href="#nginxhttp" title="Nginx:HTTP和反向代理服务" class="md-nav__link">
+    Nginx:HTTP和反向代理服务
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mongodb" title="MongoDB:非关系型数据库" class="md-nav__link">
+    MongoDB:非关系型数据库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqllite" title="SQLLite" class="md-nav__link">
+    SQLLite
   </a>
   
 </li>
@@ -592,6 +606,30 @@
   <li class="md-nav__item">
     <a href="../20.Git/" title="20.Git" class="md-nav__link">
       20.Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../21.LINUX/" title="21.LINUX" class="md-nav__link">
+      21.LINUX
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../22.Node/" title="22.Node" class="md-nav__link">
+      22.Node
     </a>
   </li>
 
@@ -685,15 +723,29 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#php" title="PHP相关" class="md-nav__link">
-    PHP相关
+  <a href="#php" title="PHP:超文本预处理语言" class="md-nav__link">
+    PHP:超文本预处理语言
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nginx" title="Nginx:" class="md-nav__link">
-    Nginx:
+  <a href="#nginxhttp" title="Nginx:HTTP和反向代理服务" class="md-nav__link">
+    Nginx:HTTP和反向代理服务
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mongodb" title="MongoDB:非关系型数据库" class="md-nav__link">
+    MongoDB:非关系型数据库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sqllite" title="SQLLite" class="md-nav__link">
+    SQLLite
   </a>
   
 </li>
@@ -794,6 +846,18 @@ $ docker images
 $ docker image rm [imageName]
 </code></pre>
 
+<ul>
+<li>进入容器</li>
+</ul>
+<pre><code class="shell">docker exec -i -t php5.4 /bin/bash
+</code></pre>
+
+<ul>
+<li>退出容器</li>
+</ul>
+<pre><code>Ctrl+P+Q
+</code></pre>
+
 <h2 id="_3">日志</h2>
 <h4 id="docker_2">Docker 引擎日志</h4>
 <p>Docker 引擎日志 一般是交给了 Upstart(Ubuntu 14.04) 或者systemd (CentOS 7, Ubuntu 16.04)。前者一般位于 /var/log/upstart/docker.log 下，后者一般通过 jounarlctl -u docker` 来读取。不同系统的位置都不一样，SO上有人总结了一份列表，我修正了一下，可以参考</p>
@@ -859,17 +923,20 @@ $ docker image rm [imageName]
 <ul>
 <li>运行MariaDB容器</li>
 </ul>
-<pre><code class="shell">$ docker run --name mariadb -e MYSQL_ROOT_PASSWORD=root -d mariadb
+<pre><code class="shell">$ docker run --name mariadb -e MYSQL_ROOT_PASSWORD=root -d mariadb 
 </code></pre>
 
 <ul>
 <li>端口映射</li>
 </ul>
-<pre><code>docker run --name mariadb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb
+<pre><code class="shell">docker run --name mariadb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb
 # -d 后台守护进程
 # -p 端口映射配置
 # --name 别名
 # MYSQL_ROOT_PASSWORD 设置root账户的密码
+$ docker run --name mariadb --restart=always -p 3306:3306 -e MYSQL_ROOT_PASSWORD=root -d mariadb
+#该配置随docker启动而启动容器: --restart=always
+
 </code></pre>
 
 <ul>
@@ -917,11 +984,11 @@ docker run --name mongo -p 27017:27017 -d mongo
 
 </code></pre>
 
-<h2 id="php">PHP相关</h2>
+<h2 id="php">PHP:超文本预处理语言</h2>
 <pre><code class="shell">$ docker pull php:5.4-fpm #5.4-fpm为版本表示
 </code></pre>
 
-<h2 id="nginx">Nginx:</h2>
+<h2 id="nginxhttp">Nginx:HTTP和反向代理服务</h2>
 <pre><code class="shell">$ docker run --name nginx -p 80:80 -d nginx:latest
 </code></pre>
 
@@ -930,6 +997,17 @@ docker run --name mongo -p 27017:27017 -d mongo
 日志位置：/var/log/nginx/
 配置文件位置：/etc/nginx/
 项目位置：/usr/share/nginx/html
+</code></pre>
+
+<h2 id="mongodb">MongoDB:非关系型数据库</h2>
+<pre><code class="shell">$ docker pull mongo
+$ docker run --name mongo --restart=always -p 27017:27017 -d mongo
+</code></pre>
+
+<h2 id="sqllite">SQLLite</h2>
+<p>拉去镜像</p>
+<pre><code class="shell">$ docker pull nouchka/sqlite3
+$ docker run --name sqlite3 -p 1422:1422 -d nouchka/sqlite3
 </code></pre>
 
 <pre><code class="shell">$ 
