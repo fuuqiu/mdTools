@@ -500,6 +500,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ssh_1" title="SSH上传文件和下载文件" class="md-nav__link">
+    SSH上传文件和下载文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="拷贝文件到本机" class="md-nav__link">
+    拷贝文件到本机
+  </a>
+  
+</li>
+      
       
       
       
@@ -600,6 +614,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#ssh_1" title="SSH上传文件和下载文件" class="md-nav__link">
+    SSH上传文件和下载文件
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="拷贝文件到本机" class="md-nav__link">
+    拷贝文件到本机
+  </a>
+  
+</li>
+      
       
       
       
@@ -659,7 +687,7 @@ interact
 
 </code></pre>
 
-<p>SSH上传文件和下载文件</p>
+<h2 id="ssh_1">SSH上传文件和下载文件</h2>
 <pre><code class="Shell">#安装 SSH(Secure Shell) 服务以提供远程管理服务 
 $ sudo apt-get install ssh
 
@@ -679,6 +707,10 @@ $ rsync -v -u -a --delete --rsh=ssh --stats sername@192.168.0.1:/home/username/r
 #将 文件/文件夹 从本地拷至远程 Ubuntu 机(rsync)
 $ rsync -v -u -a --delete --rsh=ssh --stats localfile.txt username@192.168.0.1:/home/username/
 
+</code></pre>
+
+<h2 id="_3">拷贝文件到本机</h2>
+<pre><code class="shell">scp -r root@39.108.163.60:/etc/nginx /Users/apple/Desktop/serve
 </code></pre>
                 
                   

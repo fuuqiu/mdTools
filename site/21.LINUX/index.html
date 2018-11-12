@@ -94,6 +94,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#scp" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -491,9 +495,36 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        21.LINUX
+      </label>
+    
     <a href="./" title="21.LINUX" class="md-nav__link md-nav__link--active">
       21.LINUX
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scp" title="复制文件SCP" class="md-nav__link">
+    复制文件SCP
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -517,6 +548,35 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#scp" title="复制文件SCP" class="md-nav__link">
+    复制文件SCP
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -529,12 +589,44 @@
                 
                 <p>LINUX常用命令</p>
 <ol>
-<li>创建文件： <code>touch a.txt</code></li>
-<li>创建文件夹： <code>mkdir</code> <code>NewFolder</code></li>
-<li>删除文件： <code>rm</code> <code>a.txt</code></li>
-<li>删除文件夹： <code>rmdir</code> <code>NewFolder</code></li>
-<li>删除带有文件的文件夹： rm -r NewFolder</li>
+<li>创建文件： touch a.txt</li>
+<li>创建文件夹： mkdir NewFolder</li>
+<li>删除文件： rm a.txt</li>
+<li>删除文件夹： rmdir NewFolder </li>
 </ol>
+<h2 id="scp">复制文件SCP</h2>
+<ul>
+<li><strong>从服务器下载文件</strong>  </li>
+</ul>
+<pre><code class="shell">scp &lt;用户名&gt;@&lt;ssh服务器地址&gt;:&lt;文件路径&gt; &lt;本地文件名&gt;
+$ scp root@127.0.0.1:~/test.txt ~/Desktop/test.txt #文件
+$ scp -r root@127.0.0.1:~/webapps ~/Desktop/demo    #文件夹
+
+</code></pre>
+
+<ul>
+<li><strong>上传文件到服务器</strong>  </li>
+</ul>
+<pre><code class="shell">scp &lt;本地文件名&gt; &lt;用户名&gt;@&lt;ssh服务器地址&gt;:&lt;上传保存路径即文件名&gt;
+$ scp  ~/Desktop/test.txt root@127.0.0.1:~/test.txt #文件
+$ scp  ~/Desktop/demo -r root@127.0.0.1:~/webapps   #文件夹
+</code></pre>
+
+<ul>
+<li>
+<p>复制文件</p>
+</li>
+<li>
+<p><code>shell
+  $ cp &lt;文件名&gt; ./</code></p>
+</li>
+<li>
+<p>重命名</p>
+</li>
+</ul>
+<p><code>shell
+  $ mv /a /b/c
+  $ mv ./demo.txt ./index.txt</code></p>
                 
                   
                 

@@ -38,5 +38,10 @@ mkdocs+Typora+Github在线管理Markdown在线文档
 
 ## 参与者：
 
-Fuuqiu
+- Fuuqiu  
 
+
+
+## 企鹅社群
+
+- QQ群: 878311544 
