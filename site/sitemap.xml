@@ -1,118 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/01.Charles/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/02.IDEA/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/03.PostMan/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/04.Sublime/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/05.mkdocs/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/06.AillustratorCC/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/07.Swagger/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/08.AdobePhotoshop/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/09.MongoDB/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/10.AdminMongo/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/11.GitFork/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/12.ShellTree/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/13.CentOS防火墙/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/14.MacOS/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/15.Windows2008/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/16.Synergy/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/17.duic配置/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/18.iTerm2/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/19.Docker/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/20.Git/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/21.LINUX/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>/22.Node/</loc>
-     <lastmod>2018-11-12</lastmod>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>None</loc>
+     <lastmod>2018-12-23</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
